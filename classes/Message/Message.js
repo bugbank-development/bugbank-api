@@ -1,8 +1,8 @@
 module.exports = class Message {
 
-    sendMessage(message, code, req, res){
+    sendMessage(message, status, req, res){
         this.message = message;
-        this.code = code;
+        this.status = status;
         this.req = req;
         this.res = res;
 
