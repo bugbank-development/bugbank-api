@@ -1,0 +1,11 @@
+{
+    "hostname": "api.bugbank.com.br",
+    "port": 80,
+    "mysql":[{
+        "host":"127.0.0.1",
+        "port": 3306,
+        "db": "bugbank",
+        "username": "root",
+        "password": "2mYetPkew19wBZ2OQbOF"
+    }]
+}
