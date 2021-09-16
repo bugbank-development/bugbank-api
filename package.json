@@ -1,0 +1,24 @@
+{
+  "name": "bugbank-api",
+  "version": "1.0.0",
+  "description": "Banco BugBank S.A - API",
+  "author": "Banco BugBank S.A Developers Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugbank-development/bugbank-api.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugbank-development/bugbank-api/issues"
+  },
+  "homepage": "https://github.com/bugbank-development/bugbank-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
+  }
+}
