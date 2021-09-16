@@ -15,7 +15,7 @@ module.exports = class Message {
         //console.log(this.isError);
 
         var msg = {status: this.status, message: this.message, isError: this.isError};
-        this.res.status(this.code);
+        this.res.status(this.status);
         //this.res.setHeader('Content-Type', 'text/html');
         this.res.send(msg);
     }
