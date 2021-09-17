@@ -6,12 +6,12 @@ var app = express();
 
 db.connect(err => {
     if(err){
-        console.log('Error: MySQL connect failed.');
+        console.log('[-] Error: MySQL connect failed.');
         console.log(err);
     } else {
-        console.log('[+] Conexão com banco de dados estabelecida.');
+        console.log('[+] Database connection established.');
         app.listen(config['port'], /*config['hostname'],*/ () => {
-            console.log('[+] Aplicação iniciada.');
+            console.log('[+] Application started.');
         });
     }
 });
