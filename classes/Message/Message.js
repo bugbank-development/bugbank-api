@@ -6,7 +6,7 @@ module.exports = class Message {
         this.req = req;
         this.res = res;
 
-        if(this.code >= 400){
+        if(this.status >= 400){
             this.isError = true;
         } else {
             this.isError = false;
