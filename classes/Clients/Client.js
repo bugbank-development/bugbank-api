@@ -29,8 +29,6 @@ module.exports = class Client {
                 }
             }
         });
-
-        return this.exists;
         
     }
 }
