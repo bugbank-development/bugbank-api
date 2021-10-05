@@ -21,11 +21,20 @@ module.exports = class Client {
             if(err){
                 // console.log(err);
                 Msg.sendMessage(err.sqlMessage, 500, req, res);
-            } else{
+            } else {
                 if(results.length >= 1){
                     Msg.sendMessage("Esta conta já existe em nossos sistemas.", 409, req, res);
                 } else {
-                    Msg.sendMessage("Conta criada com sucesso.", 201, req, res);
+
+                    sql = "INSERT INTO tblclientes(nome, email, cpf, endereco, cep, usuario) VALUES (?,?,?,?,?,?)";
+                    
+                    db.query(sql, [this.name, this.email, this.cpf, this.address, this.cep, this.username], (err, results) => {
+                        if(err){
+                            Msg.sendMessage(err.sqlMessage, 500, req, res);
+                        } else {
+                            Msg.sendMessage("Conta criada com sucesso.", 201, req, res);
+                        }
+                    });
                 }
             }
         });
